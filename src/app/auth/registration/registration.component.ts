@@ -8,8 +8,7 @@ import { User } from 'src/app/shared/models/user.model';
 
 @Component({
   selector: 'tm-registration',
-  templateUrl: './registration.component.html',
-  styleUrls: ['./registration.component.scss']
+  templateUrl: './registration.component.html'
 })
 export class RegistrationComponent implements OnInit {
 
