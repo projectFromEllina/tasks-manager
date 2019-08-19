@@ -8,8 +8,7 @@ import { AuthService } from 'src/app/shared/services/auth.service';
 
 @Component({
   selector: 'tm-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  templateUrl: './login.component.html'
 })
 export class LoginComponent implements OnInit {
 
