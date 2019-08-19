@@ -1,0 +1,28 @@
+
+<div class="main-wrap_team">{{team}}</div>
+<div class="main-wrap__content">
+    <div class="main__dev">
+        <div class="main__dev_title">Developers</div>
+        <ul *ngIf="isLoad; else loader">
+            <span class="no-tasks" *ngIf="noDev">You don’t have a team yet!</span> 
+            <li class="main__dev_item"
+                *ngFor="let dev of developers; index as i"
+                (click)="onChange(dev)">
+                {{dev.login}}
+            </li>
+        </ul>
+        <ng-template class="load-wrap" #loader>
+            <tm-loader></tm-loader>
+        </ng-template>
+    </div>
+    <div class="main__tasks">
+        <div class="main__tasks_title">His tasks</div>
+        <ul>
+            <li class="main__tasks_item"
+            *ngFor="let task of tasks; index as i">
+                <span class="main__tasks_name">Task {{i + 1}}</span>
+                <span class="main__tasks_dcr">{{tasks[i].text}}</span>
+            </li>
+        </ul>
+    </div>
+</div>

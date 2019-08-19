@@ -1,0 +1,83 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "login": "Manager1",
+      "password": "Manager1",
+      "team": "Team 1",
+      "access": "manager"
+    },
+    {
+      "id": 1,
+      "login": "Developer1",
+      "password": "Developer1",
+      "team": "Team 1",
+      "access": "developer",
+      "tasks": [
+        {
+          "id": 0,
+          "text": "Сreate a site"
+        },
+        {
+          "id": 1,
+          "text": "Search for new development methods"
+        },
+        {
+          "id": 2,
+          "text": "Website redesign"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "login": "Developer2",
+      "password": "Developer2",
+      "team": "Team 1",
+      "access": "developer",
+      "tasks": [
+        {
+          "id": 0,
+          "text": "Code refactoring"
+        },
+        {
+          "id": 1,
+          "text": "Сreate animation on the site"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "login": "Developer3",
+      "password": "Developer3",
+      "team": "Team 1",
+      "access": "developer",
+      "tasks": [
+        {
+          "id": 0,
+          "text": "Fix of the main page"
+        },
+        {
+          "id": 1,
+          "text": "Display data with API"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "login": "Developer4",
+      "password": "Developer4",
+      "team": "Team 2",
+      "access": "developer",
+      "tasks": [
+        {
+          "id": 0,
+          "text": "Will not catch the eye of Manager1"
+        },
+        {
+          "id": 1,
+          "text": "Avoid work =)"
+        }
+      ]
+    }
+  ]
+}

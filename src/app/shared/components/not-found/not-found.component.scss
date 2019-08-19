@@ -1,0 +1,20 @@
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    &_text {
+        text-align: center;
+        font-size: 40px;
+        span {
+            display: block;
+            background: linear-gradient(150deg, #203961 33%, #4183cac7 66%, #8AA9D6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #0B2349;
+            font-size: 120px;
+            font-weight: 900;
+        }
+    }
+}

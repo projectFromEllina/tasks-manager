@@ -1,0 +1,27 @@
+<header class="header">
+    <a 
+    [routerLink]="access === 'manager' ? '/main-manager' : '/main-dev'" 
+    class="login">Tasks manager</a>
+    <div class="header_wrap">
+        <div class="header__info">
+            <img 
+            [src]="access === 'manager' ? '../assets/manager.png' : '../assets/dev.png'" 
+            class="header__info_img">
+            <div class="header__info_name">{{user.login}}</div>
+        </div>
+        <div class="header__logout" (click)="onLogout()">
+            <img src="../assets/logout.png" class="header__logout_img">
+            <div class="header__logout_text">Logout</div>
+        </div>
+    </div>
+</header>
+<section class="menu" *ngIf="access === 'manager'">
+    <ul class="menu_ul">
+        <li class="menu_li" routerLinkActive="active">
+            <a [routerLink]="'/main-manager'">Main</a>
+        </li>
+        <li class="menu_li" routerLinkActive="active">
+            <a [routerLink]="'/tasks'">Tasks</a>
+        </li>
+    </ul>
+</section>

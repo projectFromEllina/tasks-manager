@@ -1,0 +1,10 @@
+<tm-header></tm-header>
+
+<section class="content">
+    <div class="container">
+        <div class="main-wrap" [@fadeIn]="prepareRoute(outlet)">
+            <router-outlet #outlet="outlet"></router-outlet>
+        </div>
+    </div>
+</section>
+

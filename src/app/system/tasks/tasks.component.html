@@ -1,0 +1,15 @@
+
+<div class="main-wrap_team">{{team}}</div>
+<div class="main__tasks">
+    <ul *ngIf="isLoad; else loader;">
+        <span class="no-tasks" *ngIf="noTasks">No tasks yet!</span> 
+        <li class="main__tasks_item"
+            *ngFor="let task of tasks; index as i">
+            <span class="main__tasks_name">Task {{i + 1}}</span>
+            <span class="main__tasks_dcr">{{task}}</span>
+        </li>
+    </ul>
+    <ng-template class="load-wrap" #loader>
+        <tm-loader></tm-loader>
+    </ng-template>
+</div>

@@ -1,0 +1,36 @@
+@keyframes loader {
+    from {
+        width: 2px;
+        height: 2px;
+        border-radius: calc(2px / 2);
+    }
+    to {
+        width: 15px;
+        height: 15px;
+        border-radius: calc(15px / 2);
+    }
+}
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+  
+.dot {
+    background: #172275e0;
+    margin: 5px;
+    animation-name: loader;
+    animation-duration: .6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.dot:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.dot:nth-child(3) {
+    animation-delay: 0.3s;
+}
