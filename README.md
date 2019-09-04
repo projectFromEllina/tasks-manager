@@ -6,7 +6,7 @@
   
   Data about Manager or Developers you can find in db.json.
 
-# Front-end (Angular 7) Task
+# Task
 
 1. Create imitation of Token Based Authentication. As a server You can use JSON Server API: https://github.com/typicode/json-server. As a token creation logic, You can use same hardcoded tokens for similar cases (to avoid backend JWT creation and checking). If user is not authorized – redirecting to the login page.
 2. User can be Manager or Developer. On main page 2 reports are available according to the user role: Developers Report and Tasks Report.
